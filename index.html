@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Image</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Список ссылок на изображения
+        const images = [
+            'https://disk.yandex.ru/i/qdmNd33ntLpEhw',
+            'https://disk.yandex.ru/i/qaGHeR8AOCO0Dg',
+            'https://disk.yandex.ru/i/U3LgTAI5abxCKg',
+            'https://disk.yandex.ru/i/qaGHeR8AOCO0Dg',
+            'https://disk.yandex.ru/i/6PD8aFOXQQxigg',
+            'https://disk.yandex.ru/i/3i6CPnrtAmFe9Q',
+            'https://disk.yandex.ru/i/4R5KLkLbHcUIwA',
+            'https://disk.yandex.ru/i/Uk0UJ3yhaCvOBA',
+            'https://disk.yandex.ru/i/t-7ihZ5uBfPBaQ',
+            'https://disk.yandex.ru/i/05xJkYLkhjUFOg',
+            'https://disk.yandex.ru/i/8S3Fu8hvSyIwEw',
+            'https://disk.yandex.ru/i/vfMLzdjcWxHHSg',
+            'https://disk.yandex.ru/i/cU_MYUNqr5fdTA',
+            'https://disk.yandex.ru/i/vu3UdnD-7b3YWg',
+            'https://disk.yandex.ru/i/rNB29r-gosISaQ',
+            'https://disk.yandex.ru/i/QHb8T5ozW2eaPw',
+            'https://disk.yandex.ru/i/EttJnO4KZGaw9A',
+            'https://disk.yandex.ru/i/FebPfmi6USqwwg',
+            'https://disk.yandex.ru/i/RIMkgoEQoKcftA',
+            'https://disk.yandex.ru/i/P9vxjysw2V5iNw',
+            'https://disk.yandex.ru/i/H4qXufetVFN85Q',
+            'https://disk.yandex.ru/i/pDadwjEX6JqSNw',
+            'https://disk.yandex.ru/i/f1j-WDZ7FhXfqQ',
+            'https://disk.yandex.ru/i/AX3py3o4U5VScw',
+            'https://disk.yandex.ru/i/q5DDNQ-a1eGWwQ',
+            'https://disk.yandex.ru/i/Z01oQwh7iqtWzQ',
+            'https://disk.yandex.ru/i/s26uiL7aATB9xQ',
+            'https://disk.yandex.ru/i/UVAOyyUW9gWsWg'
+        ];
+
+        // Выбор случайного изображения
+        const randomImage = images[Math.floor(Math.random() * images.length)];
+
+        // Создание элемента img и добавление его в тело документа
+        const imgElement = document.createElement('img');
+        imgElement.src = randomImage;
+        document.body.appendChild(imgElement);
+    </script>
+</body>
+</html>
